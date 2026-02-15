@@ -112,12 +112,62 @@
             text-transform: uppercase;
         }
 
+        .services {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        .services-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            color: #aaa;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+
+        .service-link {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 300;
+            color: #444;
+            text-decoration: none;
+            padding: 0.6rem 0.75rem;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            transition: border-color 0.2s, color 0.2s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .service-link:hover {
+            border-color: #bbb;
+            color: #1a1a1a;
+        }
+
+        .service-node {
+            font-size: 0.65rem;
+            color: #bbb;
+            letter-spacing: 0.03em;
+        }
+
         @media (max-width: 600px) {
             .word {
                 font-size: 2.5rem;
             }
             .meaning {
                 font-size: 1.1rem;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -147,6 +197,18 @@
 
         <div class="etymology">
             <strong>Origin:</strong> Ancient Greek <em>nóthos</em> (νόθος), meaning "bastard" or "of mixed origin." Reclaimed c. 2025 to describe the productive ambiguity of human-AI cognitive partnerships.
+        </div>
+
+        <div class="services">
+            <p class="services-label">Polis</p>
+            <div class="services-grid">
+                <a class="service-link" href="http://192.168.50.217:8080">Open-WebUI <span class="service-node">NUC</span></a>
+                <a class="service-link" href="http://192.168.50.217:8096">Jellyfin <span class="service-node">NUC</span></a>
+                <a class="service-link" href="https://192.168.50.217:47990">Sunshine <span class="service-node">NUC</span></a>
+                <a class="service-link" href="http://192.168.50.217:8150/health">SMS Webhook <span class="service-node">NUC</span></a>
+                <a class="service-link" href="http://192.168.50.99:6006">Foolproof <span class="service-node">Thor-1</span></a>
+                <a class="service-link" href="http://192.168.50.120:8188">ComfyUI <span class="service-node">Thor-2</span></a>
+            </div>
         </div>
 
         <p class="meta">Nothoi LLC · est. 2025</p>
