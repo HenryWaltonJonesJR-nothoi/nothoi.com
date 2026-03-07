@@ -41,9 +41,19 @@
         <h1>SMS Messaging Policy</h1>
 
         <div class="section" style="background: #f5f3ef; padding: 1.25rem; border-radius: 6px; margin-bottom: 2rem;">
-            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Subscribe to LifeOS Notifications</p>
-            <p>Text <strong>START</strong> to <strong>+1 (313) 800-0822</strong> to opt in.</p>
-            <p style="font-size: 0.95rem; margin-bottom: 0;">By texting START, you consent to receive recurring automated text messages from Nothoi LLC, including system status alerts, daily briefings, and AI-generated conversational responses. Consent is not a condition of any purchase. Message frequency varies; up to 10 messages per week. Msg&amp;Data rates may apply. Reply STOP to cancel at any time. Reply HELP for assistance. <a href="/privacy" style="color: #1a1a1a;">Privacy Policy</a> · <a href="/terms" style="color: #1a1a1a;">Terms of Service</a></p>
+            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Subscribe to LifeOS Notifications</p>
+            <form onsubmit="document.getElementById('opt-in-confirm').style.display='block'; return false;" style="margin-bottom: 1rem;">
+                <input type="tel" placeholder="Your mobile number" style="font-family: 'Inter', sans-serif; font-size: 0.9rem; padding: 0.6rem 0.8rem; border: 1px solid #ccc; border-radius: 4px; width: 100%; margin-bottom: 0.75rem;" required>
+                <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.85rem; line-height: 1.5; color: #333; margin-bottom: 0.75rem; cursor: pointer;">
+                    <input type="checkbox" required style="margin-top: 0.25rem; flex-shrink: 0;">
+                    <span>I agree to receive recurring automated text messages from Nothoi LLC at the phone number provided. Msg frequency: up to 10 msgs/week. Msg&amp;Data rates may apply. Consent is not a condition of any purchase. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help. <a href="/privacy" style="color: #1a1a1a;">Privacy Policy</a> · <a href="/terms" style="color: #1a1a1a;">Terms of Service</a></span>
+                </label>
+                <button type="submit" style="font-family: 'Inter', sans-serif; font-size: 0.85rem; padding: 0.5rem 1.5rem; background: #1a1a1a; color: #fefdfb; border: none; border-radius: 4px; cursor: pointer;">Subscribe</button>
+            </form>
+            <div id="opt-in-confirm" style="display: none; background: #e8f5e9; padding: 0.75rem; border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #2e7d32;">
+                You will receive a confirmation text from +1 (313) 800-0822. Reply START to complete your subscription.
+            </div>
+            <p style="font-size: 0.9rem; margin-top: 0.75rem; margin-bottom: 0; color: #666;">You can also text <strong>START</strong> to <strong>+1 (313) 800-0822</strong> directly to opt in.</p>
         </div>
 
         <div class="section">
