@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMS Policy — Nothoi</title>
+    <title>SMS Policy — Nothoi LLC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
@@ -28,76 +28,123 @@
             letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.5rem;
         }
         p { font-size: 1.1rem; line-height: 1.7; margin-bottom: 0.75rem; }
-        .number { font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #444; line-height: 1.8; }
+        ul {
+            font-size: 1.05rem; line-height: 1.8; list-style: none;
+            padding-left: 1rem; border-left: 2px solid #e0e0e0; margin-bottom: 0.75rem;
+        }
+        ul li { margin-bottom: 0.25rem; }
+        .opt-in-box {
+            background: #f5f3ef; padding: 1.25rem; border-radius: 6px; margin-bottom: 2rem;
+        }
+        .opt-in-box h2 {
+            font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;
+        }
+        .opt-in-box input[type="tel"] {
+            font-family: 'Inter', sans-serif; font-size: 0.9rem;
+            padding: 0.6rem 0.8rem; border: 1px solid #ccc; border-radius: 4px;
+            width: 100%; margin-bottom: 0.75rem;
+        }
+        .opt-in-box label {
+            display: flex; align-items: flex-start; gap: 0.5rem;
+            font-family: 'Inter', sans-serif; font-size: 0.85rem;
+            line-height: 1.5; color: #333; margin-bottom: 0.75rem; cursor: pointer;
+        }
+        .opt-in-box label input[type="checkbox"] {
+            margin-top: 0.25rem; flex-shrink: 0;
+        }
+        .opt-in-box button {
+            font-family: 'Inter', sans-serif; font-size: 0.85rem;
+            padding: 0.5rem 1.5rem; background: #1a1a1a; color: #fefdfb;
+            border: none; border-radius: 4px; cursor: pointer;
+        }
+        .opt-in-box button:hover { background: #333; }
+        .confirm-msg {
+            display: none; background: #e8f5e9; padding: 0.75rem; border-radius: 4px;
+            font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #2e7d32;
+            margin-top: 0.75rem;
+        }
         .meta {
             margin-top: 2rem; font-family: 'Inter', sans-serif; font-size: 0.75rem;
             color: #aaa; letter-spacing: 0.05em; text-transform: uppercase;
         }
+        a { color: #1a1a1a; }
     </style>
 </head>
 <body>
     <article class="entry">
-        <a class="back" href="/">&larr; nothoi</a>
+        <a class="back" href="/">&larr; Nothoi LLC</a>
         <h1>SMS Messaging Policy</h1>
 
-        <div class="section" style="background: #f5f3ef; padding: 1.25rem; border-radius: 6px; margin-bottom: 2rem;">
-            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem;">Subscribe to LifeOS Notifications</p>
-            <form onsubmit="document.getElementById('opt-in-confirm').style.display='block'; return false;" style="margin-bottom: 1rem;">
-                <input type="tel" placeholder="Your mobile number" style="font-family: 'Inter', sans-serif; font-size: 0.9rem; padding: 0.6rem 0.8rem; border: 1px solid #ccc; border-radius: 4px; width: 100%; margin-bottom: 0.75rem;" required>
-                <label style="display: flex; align-items: flex-start; gap: 0.5rem; font-family: 'Inter', sans-serif; font-size: 0.85rem; line-height: 1.5; color: #333; margin-bottom: 0.75rem; cursor: pointer;">
-                    <input type="checkbox" required style="margin-top: 0.25rem; flex-shrink: 0;">
-                    <span>I agree to receive recurring automated text messages from Nothoi LLC at the phone number provided. Msg frequency: up to 10 msgs/week. Msg&amp;Data rates may apply. Consent is not a condition of any purchase. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help. <a href="/privacy" style="color: #1a1a1a;">Privacy Policy</a> · <a href="/terms" style="color: #1a1a1a;">Terms of Service</a></span>
-                </label>
-                <button type="submit" style="font-family: 'Inter', sans-serif; font-size: 0.85rem; padding: 0.5rem 1.5rem; background: #1a1a1a; color: #fefdfb; border: none; border-radius: 4px; cursor: pointer;">Subscribe</button>
-            </form>
-            <div id="opt-in-confirm" style="display: none; background: #e8f5e9; padding: 0.75rem; border-radius: 4px; font-family: 'Inter', sans-serif; font-size: 0.85rem; color: #2e7d32;">
-                You will receive a confirmation text from +1 (313) 800-0822. Reply START to complete your subscription.
-            </div>
-            <p style="font-size: 0.9rem; margin-top: 0.75rem; margin-bottom: 0; color: #666;">You can also text <strong>START</strong> to <strong>+1 (313) 800-0822</strong> directly to opt in.</p>
+        <div class="section">
+            <p class="section-label">Program Description</p>
+            <p>Nothoi LLC operates a private notification and executive briefing service. Registered contacts receive automated SMS messages including system status alerts, daily briefings, task confirmations, scheduling updates, and operational notifications.</p>
         </div>
 
         <div class="section">
-            <p class="section-label">About This Service</p>
-            <p>LifeOS is a private AI assistant operated by Nothoi LLC. SMS notifications are sent only to contacts who have been personally authorized by the account owner. This is not a marketing service.</p>
+            <p class="section-label">Who Can Subscribe</p>
+            <p>Nothoi LLC's SMS service is available to clients and contacts who have been invited to use our services.</p>
         </div>
 
         <div class="section">
             <p class="section-label">How to Opt In</p>
-            <p>Text <strong>START</strong> to +1 (313) 800-0822. Only pre-authorized contacts will receive messages. If your number is not on the authorized list, you will not receive any messages.</p>
+            <p>To subscribe to SMS notifications from Nothoi LLC, enter your mobile phone number in the form below, check the consent box, and submit the form. By opting in, you confirm that you agree to receive automated text messages from Nothoi LLC. You understand that:</p>
+            <ul>
+                <li>Message frequency: up to 10 messages per week</li>
+                <li>Message and data rates may apply</li>
+                <li>Consent is not required as a condition of any purchase</li>
+                <li>You can opt out at any time by replying STOP to any message</li>
+                <li>You can request help by replying HELP to any message</li>
+            </ul>
+            <p>Your mobile number will not be shared with or sold to third parties or affiliates for marketing or promotional purposes at any time.</p>
+        </div>
+
+        <div class="opt-in-box">
+            <h2>Subscribe to Notifications</h2>
+            <form onsubmit="document.getElementById('opt-in-confirm').style.display='block'; this.querySelector('button').disabled=true; this.querySelector('button').textContent='Submitted'; return false;">
+                <input type="tel" placeholder="Your mobile number" required>
+                <label>
+                    <input type="checkbox" required>
+                    <span>I agree to receive automated SMS messages from Nothoi LLC. Up to 10 msgs/week. Msg &amp; data rates may apply. Reply STOP to cancel, HELP for help. Not a condition of purchase. View our <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Service</a>.</span>
+                </label>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="opt-in-confirm" class="confirm-msg">
+                Thank you. You will receive a confirmation text from +1 (313) 800-0822.
+            </div>
         </div>
 
         <div class="section">
             <p class="section-label">How to Opt Out</p>
-            <p>Text <strong>STOP</strong> to +1 (313) 800-0822 at any time. You will receive a confirmation and no further messages will be sent.</p>
+            <p>Reply <strong>STOP</strong> to any message from us. You will receive a confirmation and no further messages will be sent. You may re-subscribe at any time by replying START or by completing the opt-in form above.</p>
         </div>
 
         <div class="section">
-            <p class="section-label">Message Types &amp; Frequency</p>
-            <div class="number">
-                System status alerts<br>
-                Daily briefings<br>
-                Conversational AI responses<br>
-                Inbox and task notifications
-            </div>
-            <p style="margin-top: 0.5rem;">Message frequency varies; up to 10 messages per week per recipient. No marketing, advertising, or solicitation.</p>
+            <p class="section-label">Help</p>
+            <p>Reply <strong>HELP</strong> to any message for assistance, or contact us at <strong>support@nothoi.com</strong>.</p>
         </div>
 
         <div class="section">
-            <p class="section-label">Help &amp; Support</p>
-            <p>Text <strong>HELP</strong> to +1 (313) 800-0822 for assistance, or contact the account owner directly.</p>
+            <p class="section-label">Message Types</p>
+            <ul>
+                <li>System status and health alerts</li>
+                <li>Daily and weekly briefings</li>
+                <li>Task and action confirmations</li>
+                <li>Scheduling and meeting notifications</li>
+                <li>Service announcements</li>
+            </ul>
         </div>
 
         <div class="section">
-            <p class="section-label">Terms &amp; Conditions</p>
-            <p>By opting in to LifeOS notifications, you agree to receive recurring automated text messages from Nothoi LLC at the phone number you provided. Consent is not a condition of any purchase. You may opt out at any time by texting STOP. Message and data rates may apply. Nothoi LLC is not responsible for carrier charges. This service is provided as-is for personal use. We will not sell, share, or disclose your mobile information to third parties or affiliates for marketing or promotional purposes. See our full <a href="/privacy" style="color: #1a1a1a;">Privacy Policy</a> and <a href="/terms" style="color: #1a1a1a;">Terms of Service</a>.</p>
+            <p class="section-label">Carrier Information</p>
+            <p>Carriers are not liable for delayed or undelivered messages. Message and data rates may apply. Check with your carrier for details about your messaging plan.</p>
         </div>
 
         <div class="section">
-            <p class="section-label">Privacy</p>
-            <p>Your phone number is stored on private infrastructure operated by Nothoi LLC. We will not sell, share, or disclose your mobile information to third parties or affiliates for marketing or promotional purposes. Your information is used solely to deliver LifeOS notifications. You may request deletion by texting STOP or contacting <strong>privacy@nothoi.com</strong>. See our full <a href="/privacy" style="color: #1a1a1a;">Privacy Policy</a>.</p>
+            <p class="section-label">Contact</p>
+            <p>Nothoi LLC &middot; <strong>support@nothoi.com</strong></p>
         </div>
 
-        <p class="meta">Nothoi LLC · est. 2025</p>
+        <p class="meta">Nothoi LLC &middot; Est. 2025</p>
     </article>
 </body>
 </html>
